@@ -4,12 +4,12 @@ from scapy.all import sniff, Ether,IP, TCP, UDP
 def packet_handler(packet):
     if Ether in packet:
         print('Ethernet Frame:')
-        print(f"Source MAC Address: {packet[Ether].src},Destination MAC Address: {packet[Ether].dst}")
+        print(f"Source MAC Address: {packet[Ether].src}, Destination MAC Address: {packet[Ether].dst}")
 
 
     if IP in packet:
         print("IP Packet:")
-        print(f"Source IP Adress: {packet[IP].src}, destination IP Address: {packet[IP].dst}")
+        print(f"Source IP Adress: {packet[IP].src}, Destination IP Address: {packet[IP].dst}")
 
 
     if TCP in packet:
