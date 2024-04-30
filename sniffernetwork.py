@@ -14,7 +14,7 @@ def packet_handler(packet):
 
     if TCP in packet:
         print("TCP Segment:")
-        print(f"Source port: {packet[TCP].sport}, Destinaton Port: {packet[TCP].dport}")
+        print(f"Source port: {packet[TCP].sport}, Destination Port: {packet[TCP].dport}")
     
     if UDP in packet:
         print("UDP Datagram:")
